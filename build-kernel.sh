@@ -4,7 +4,7 @@ VER=6.10
 KERNEL_DIR=linux-${VER}
 
 if [ ! -d ${KERNEL_DIR} ];then
-    wget https://mirrors.hust.edu.cn/kernel.org/linux/kernel/v6.x/linux-${VER}.tar.xz
+    wget -c https://mirrors.hust.edu.cn/kernel.org/linux/kernel/v6.x/linux-${VER}.tar.xz
     tar -xf linux-${VER}.tar.xz
 fi
 
